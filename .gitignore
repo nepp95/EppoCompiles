@@ -2,3 +2,6 @@
 .vscode
 /Bin
 /Bin-Int
+
+*.vcxproj*
+*.sln
