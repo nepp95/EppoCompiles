@@ -2,6 +2,7 @@
 
 typedef struct
 {
+	void* prev;
 	void* next;
 	char value;
 } listNode_t;
@@ -9,6 +10,7 @@ typedef struct
 typedef struct
 {
 	listNode_t* head;
+	listNode_t* tail;
 } linkedList_t;
 
 linkedList_t* ll_createList();

@@ -34,7 +34,8 @@ void compile(string_t* str)
 			ll_printList(token);
 		}
 
-
+		ll_freeList(token);
+		token = ll_createList();
 		// Increment character pointer
 		i++;
 	}
