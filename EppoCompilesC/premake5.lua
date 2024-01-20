@@ -1,14 +1,13 @@
-project "EppoCompiles"
+project "EppoCompilesC"
     kind "ConsoleApp"
-    language "C++"
-    cppdialect "C++17"
+    language "C"
 
     targetdir ("%{wks.location}/Bin/" .. OutputDir .. "/%{prj.name}")
     objdir ("%{wks.location}/Bin-Int/" .. OutputDir .. "/%{prj.name}")
 
     files {
         "Source/**.h",
-        "Source/**.cpp"
+        "Source/**.c"
     }
 
     includedirs {
