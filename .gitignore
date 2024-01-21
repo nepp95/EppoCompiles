@@ -1,8 +1,10 @@
+# IDE
 .vs
 .vscode
-/Bin
-/Bin-Int
-
 *.vcxproj*
 *.sln
 Makefile
+
+# Binaries
+/Bin
+/Bin-Int

@@ -14,3 +14,4 @@ workspace "EppoCompiles"
     OutputDir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
     include "EppoCompiles"
+    include "EppoCompilesC"
