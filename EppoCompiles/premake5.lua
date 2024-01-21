@@ -6,6 +6,9 @@ project "EppoCompiles"
     targetdir ("%{wks.location}/Bin/" .. OutputDir .. "/%{prj.name}")
     objdir ("%{wks.location}/Bin-Int/" .. OutputDir .. "/%{prj.name}")
 
+    pchheader "pch.h"
+    pchsource "Source/pch.cpp"
+
     files {
         "Source/**.h",
         "Source/**.cpp"
