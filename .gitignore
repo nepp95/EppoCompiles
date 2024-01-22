@@ -8,3 +8,4 @@ Makefile
 # Binaries
 /Bin
 /Bin-Int
+/EppoCompiles/Resources/code*
