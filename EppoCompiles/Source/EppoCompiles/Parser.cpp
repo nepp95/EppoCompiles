@@ -39,6 +39,9 @@ namespace Eppo
 
 	void Parser::ParseExpression(Node& parent)
 	{
+		Node& parentNode = m_Nodes.emplace_back();
+
+
 		Node& node = parent.Children.emplace_back();
 		node.Type = NodeType::Expression;
 		node.Value = Consume();
@@ -59,8 +62,6 @@ namespace Eppo
 			Consume();
 		} else if (Peek() && Peek().value().Type == TokenType::Type)
 		{
-			
-
 			ParseDeclaration();
 		}
 	}

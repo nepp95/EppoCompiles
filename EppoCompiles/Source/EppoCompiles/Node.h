@@ -4,11 +4,23 @@
 
 namespace Eppo
 {
-	enum class NodeType
+	enum class DeclarationKind
 	{
-		Entrypoint = 0,
-		Exitpoint = 1,
+		Unknown = 0,
+		Identifier,
+		Function
+	};
 
+	enum class DeclarationType
+	{
+		Unknown = 0,
+		Int
+	};
+
+
+
+	/*enum class NodeType
+	{
 		Declaration,
 		Expression,
 		Statement
@@ -19,5 +31,15 @@ namespace Eppo
 		NodeType Type;
 		Token Value;
 		std::vector<Node> Children;
+	};*/
+
+	struct NodeExpr
+	{
+		Token token;
+	};
+
+	struct NodeStmt
+	{
+		NodeExpr Expr;
 	};
 }
